@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Rainbow · Flask{% endblock %}
+{% block content %}
+  <section class="card" style="--accent: {{ color }};">
+    <h1>Rainbow Flask</h1>
+    <p>Enjoy the colorful background!</p>
+    <div class="swatch" aria-label="Random color swatch"></div>
+    <code class="code">Current color: {{ color }}</code>
+    <div class="grid">
+      <a class="btn" href="{{ url_for('rainbow') }}">New Color</a>
+      <a class="btn btn-ghost" href="{{ url_for('helloworld') }}">Back Home</a>
+    </div>
+  </section>
+{% endblock %}

@@ -1,1 +1,12 @@
-<h1>Hello, World!</h1>
+{% extends "base.html" %}
+{% block title %}Welcome · Flask{% endblock %}
+{% block content %}
+  <section class="card">
+    <h1>Welcome to My Flask App</h1>
+    <p>This is a simple Flask application with enhanced styling.</p>
+    <div class="grid">
+      <a class="btn" href="{{ url_for('helloname', name='friend') }}">Say hi</a>
+      <a class="btn btn-ghost" href="{{ url_for('rainbow') }}">Try the Rainbow</a>
+    </div>
+  </section>
+{% endblock %}
