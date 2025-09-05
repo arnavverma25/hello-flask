@@ -28,3 +28,8 @@ def rainbow():
     <p>Rainbow Flask</p>
 </body>
     """
+
+# ...existing code...
+
+if __name__ == "__main__":
+    app.run(debug=True)
